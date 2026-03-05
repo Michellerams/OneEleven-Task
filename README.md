@@ -1,81 +1,123 @@
-String Sorter API
-A lightweight REST API that receives a string, splits it into characters, sorts them alphabetically, and returns the result as a word array.
+🚀 String Sorter API
 
-Features
+A lightweight REST API that receives a string, splits it into individual characters, sorts them alphabetically, and returns the result as an array.
 
-POST /sort-string — Accepts a string and returns alphabetically sorted characters
-CORS enabled for all origins
-Bonus frontend UI for testing the validation endpoint
-Ready for deployment on Railway, Render, or Heroku
+📌 Features
 
+✅ POST /sort-string — Accepts a string and returns alphabetically sorted characters
 
-Tech Stack
+🌍 CORS enabled for all origins
+
+🖥️ Bonus frontend UI for endpoint validation
+
+☁️ Ready for deployment on Railway, Render, or Heroku
+
+🛠️ Tech Stack
 
 Runtime: Node.js
+
 Framework: Express.js
+
 Middleware: CORS
 
-
-Project Structure
+📂 Project Structure
 oneeleven/
 ├── index.js
 ├── package.json
 ├── Procfile
 └── public/
     └── index.html
+🚀 Getting Started
+✅ Prerequisites
 
-Getting Started
-Prerequisites
+Node.js (v14 or higher recommended)
 
-Node.js installed on your machine
+Check your version:
 
-Installation
+node -v
+📦 Installation
 
-Clone the repository:
+1️⃣ Clone the repository:
 
-bashgit clone https://github.com/YOUR_USERNAME/oneeleven.git
+git clone https://github.com/YOUR_USERNAME/oneeleven.git
 cd oneeleven
 
-Install dependencies:
+2️⃣ Install dependencies:
 
-bashnpm install
+npm install
 
-Start the server:
+3️⃣ Start the server:
 
-bashnpm start
-The server will run on http://localhost:3000
+npm start
 
-API Usage
-POST /sort-string
-Request Body:
-json{
+The server will run at:
+
+http://localhost:3000
+📡 API Usage
+🔹 POST /sort-string
+
+Sorts characters alphabetically from the provided string.
+
+Request Body
+{
   "data": "example"
 }
-Response:
-json{
+Success Response (200)
+{
   "word": ["a", "e", "e", "l", "m", "p", "x"]
 }
-Error Response (400):
-json{
+Error Response (400)
+{
   "error": "Missing or invalid 'data' field"
 }
-Example with curl
-bashcurl -X POST http://localhost:3000/sort-string \
+🔎 Example Using curl
+curl -X POST http://localhost:3000/sort-string \
   -H "Content-Type: application/json" \
   -d '{"data":"example"}'
+🌐 Testing the Deployed Endpoint
 
-  Deployment
-This project is configured for easy deployment on Railway, Render, or Heroku via the included Procfile.
+After deployment, validate your API using:
+
+https://yhxzjyykdsfkdrmdxgho.supabase.co/functions/v1/application-task?url=YOUR_API_ENDPOINT_URL&email=YOUR_EMAIL_ADDRESS
+
+Replace:
+
+YOUR_API_ENDPOINT_URL → Your live API URL (e.g. https://your-app.railway.app/sort-string)
+
+YOUR_EMAIL_ADDRESS → Your email address
+
+☁️ Deployment
+
+This project includes a Procfile for easy deployment:
+
 web: node index.js
-The server automatically uses the PORT environment variable provided by the platform.
 
-Frontend (Bonus)
-A simple frontend is served at GET / that allows you to:
+The application automatically uses the PORT environment variable provided by hosting platforms like:
 
-Enter your email and API endpoint URL
+Railway
+
+Render
+
+Heroku
+
+🖥️ Frontend (Bonus)
+
+A simple frontend UI is available at:
+
+GET /
+
+It allows you to:
+
+Enter your email
+
+Enter your API endpoint URL
+
 Submit to the validation endpoint
-View the full JSON response on the page
 
+View the full JSON response
 
-.gitignore
+📁 .gitignore
+
+Make sure your .gitignore includes:
+
 node_modules/
