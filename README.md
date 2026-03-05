@@ -3,6 +3,7 @@
 A lightweight REST API that receives a string, splits it into individual characters, sorts them alphabetically, and returns the result as an array.
 
 
+
 📌 Features
 
 -✅ POST /sort-string — Accepts a string and returns alphabetically sorted characters
@@ -12,6 +13,7 @@ A lightweight REST API that receives a string, splits it into individual charact
 -🖥️ Bonus frontend UI for endpoint validation
 
 -☁️ Ready for deployment on Railway, Render, or Heroku
+
 
 
 🛠️ Tech Stack
