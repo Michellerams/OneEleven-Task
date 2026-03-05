@@ -3,8 +3,7 @@
 A lightweight REST API that receives a string, splits it into individual characters, sorts them alphabetically, and returns the result as an array.
 
 <img width="941" height="857" alt="Task" src="https://github.com/user-attachments/assets/6bc472eb-52a1-43b2-998c-6ed732e857cd" />
-#
-#
+
 
 📌 Features
 
@@ -34,7 +33,9 @@ oneeleven/
 ├── Procfile
 └── public/
     └── index.html
-    
+
+
+
 🚀 Getting Started
 ✅ Prerequisites
 
