@@ -2,23 +2,26 @@
 
 A lightweight REST API that receives a string, splits it into individual characters, sorts them alphabetically, and returns the result as an array.
 
+
 📌 Features
 
-✅ POST /sort-string — Accepts a string and returns alphabetically sorted characters
+-✅ POST /sort-string — Accepts a string and returns alphabetically sorted characters
 
-🌍 CORS enabled for all origins
+-🌍 CORS enabled for all origins
 
-🖥️ Bonus frontend UI for endpoint validation
+-🖥️ Bonus frontend UI for endpoint validation
 
-☁️ Ready for deployment on Railway, Render, or Heroku
+-☁️ Ready for deployment on Railway, Render, or Heroku
+
 
 🛠️ Tech Stack
 
-Runtime: Node.js
+-Runtime: Node.js
 
-Framework: Express.js
+-Framework: Express.js
 
-Middleware: CORS
+-Middleware: CORS
+
 
 📂 Project Structure
 oneeleven/
@@ -27,6 +30,7 @@ oneeleven/
 ├── Procfile
 └── public/
     └── index.html
+    
 🚀 Getting Started
 ✅ Prerequisites
 
@@ -39,7 +43,7 @@ node -v
 
 1️⃣ Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/oneeleven.git
+git clone https://github.com/USERNAME/oneeleven.git
 cd oneeleven
 
 2️⃣ Install dependencies:
